@@ -23,6 +23,11 @@ class loginPage extends basePage{
     await this.validatePageTitle("SmartERP Dashboard");
     }
 
+    async verifyPageUrl() {
+    await this.validatePageUrl("https://smarterp-wgaw.onrender.com/dashboard.html");
+    }
+
+
 
 }
   export {loginPage}
