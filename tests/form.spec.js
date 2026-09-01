@@ -16,3 +16,7 @@ test('Fill and submit form', async ({ page }) => {
     await form.verifyFormSubmission();
 });
 
+test("verify page url" , async ({ page }) => {
+    await page.goto("https://google.com")
+    await expect(page).toHaveURL("https://google.com")
+});
