@@ -5,3 +5,4 @@ test("Login Test", async ({ loginPage }) => {
   await loginPage.login(process.env.SMARTERP_USERNAME, process.env.SMARTERP_PASSWORD);
   await loginPage.verifyUserIsLoggedIn();
 });
+
